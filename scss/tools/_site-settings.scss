@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+// Html 5 Element
+$audio-canvas-video: false; // True | False
+
+// Fonts
+$font1: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font2: Georgia, serif;
+
+// = Colors
+// -----------------------------
+
+// Graphic chart
+$color1: #000;
+$color2: #c1c1c1;
+
+//Background slides
+$slide1: #8EC547;
+$slide2: #D9FFA8;
+$slide3: #B8FF5C;
+$slide4: #6D8054;
+
+// Text
+$color-text-base: #212121;
+
+// link
+$color-link: $color1;
+$color-link-hover: darken($color1, 10%);
+
+// Mixin Placeholder
+$color-mixin-placeholder: #cdcdcd;
+
+// Selection
+$color-selection: $color1;
+
+// Btn
+$bg-btn: #555;
+$bg-btn-hover: darken($bg-btn, 10%);
+$clr-btn: #212121;
+$clr-btn-hover: darken($clr-btn, 10%);
+
+// = Grid
+// -----------------------------
+
+// Max width wrapper
+$wrapper-width: pxtoem(1140, 16);
+
+// = Prefix
+// -----------------------------
+
+$prefix-for-webkit:    true !default;
+$prefix-for-mozilla:   true !default;
+$prefix-for-microsoft: true !default;
+$prefix-for-opera:     true !default;
+$prefix-for-spec:      true !default; // required for keyframe mixin
+
+// = Responsive
+// -----------------------------
+
+$width-large: 75em; // 1200/16
+$width-medium: 62em; // 992/16
+$width-small: 48em; // 768/16

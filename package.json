@@ -1,0 +1,12 @@
+{
+    "name": "Canopy",
+    "version": "1.0.0",
+    "devDependencies": {
+        "grunt": "latest",
+        "grunt-contrib-concat": "latest",
+	    "grunt-contrib-uglify": "latest",
+		"grunt-contrib-cssmin": "latest",
+		"grunt-contrib-compass": "latest",
+	    "grunt-contrib-watch": "latest"  
+    }
+}
