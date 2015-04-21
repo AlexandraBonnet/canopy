@@ -1,8 +1,6 @@
 Canopy
 ======
 
-
-
 Sometimes the hardest part of a new project is getting started. Canopy gives you a solid base with a range of tools to help you along development process.
 
 <h2>Set up Canopy</h2>
