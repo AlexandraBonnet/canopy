@@ -1,108 +1,67 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Canopy : Kit de démarrage pour vos projets web">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Canopy</title>
+    <meta charset="UTF-8">
+    <title>Canopy by AlexandraBonnet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Canopy</h1>
+      <h2 class="project-tagline">Start your site with web starter kit</h2>
+      <a href="https://github.com/AlexandraBonnet/canopy" class="btn">View on GitHub</a>
+      <a href="https://github.com/AlexandraBonnet/canopy/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/AlexandraBonnet/canopy/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/AlexandraBonnet/canopy">View on GitHub</a>
-
-          <h1 id="project_title">Canopy</h1>
-          <h2 id="project_tagline">Kit de démarrage pour vos projets web</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/AlexandraBonnet/canopy/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/AlexandraBonnet/canopy/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>Canopy est un kit de démarrage pour vos nouveaux projets web. <br>
-Inspiré de <b>SMACSS</b>, il utilise <b>Compass</b>, <b>Grunt</b> &amp; <b>Bower</b>.</p>
+    <section class="main-content">
+      <p>Sometimes the hardest part of a new project is getting started. Canopy gives you a solid base with a range of tools to help you along development process.</p>
 
 <h2>
-<a name="pr%C3%A9sentation" class="anchor" href="#pr%C3%A9sentation"><span class="octicon octicon-link"></span></a>Présentation</h2>
+<a id="set-up-canopy" class="anchor" href="#set-up-canopy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set up Canopy</h2>
+
+<p>Canopy relies on NodeJS, NPM, Grunt, Bower &amp; Compass, once you’ve got these on your machine, you’ll have everything you need to start using Canopy in your projects.</p>
 
 <h3>
-<a name="scalable-and-modular-architecture-for-css-smacss" class="anchor" href="#scalable-and-modular-architecture-for-css-smacss"><span class="octicon octicon-link"></span></a>Scalable and Modular Architecture for CSS (SMACSS)</h3>
+<a id="install-these-one-time-dependencies" class="anchor" href="#install-these-one-time-dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install these one time dependencies</h3>
 
-<p>SMACSS est une méthode qui permet d'organiser votre CSS.<br>
-Elle permet notamment d'obtenir un code modulaire réutilisable et facilement maintenable sur vos projets web.<br>
-Plus d'informations sur la documentation officielle de SMACSS : <a href="http://smacss.com/">http://smacss.com/</a></p>
+<p>There are two tool sets you need to install on your machine before you can build sites with Canopy : NodeJS, NPM &amp; Compass.</p>
 
-<h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+<h4>
+<a id="nodejs--npm" class="anchor" href="#nodejs--npm" aria-hidden="true"><span class="octicon octicon-link"></span></a>NodeJS &amp; NPM</h4>
 
-<p>Pour utiliser Canopy, vous avez besoin d'installer Grunt, Compass et Bower.</p>
+<p>Canopy’s build tools need Node and NPM. Node is used to run Grunt, the task runner. NPM is used to download the modules needed to perform certain tasks in Grunt.<br>
+If you aren’t sure if you have NodeJS and NPM, check by opening a command prompt and running :</p>
 
-<h3>
-<a name="grunt" class="anchor" href="#grunt"><span class="octicon octicon-link"></span></a>Grunt</h3>
+<pre>$ node -v</pre>
 
-<p>Grunt est un outil qui permet d'automatiser les tâches répétitives de votre projet.<br>
-Plus d'informations sur la documentation officielle de grunt.js : <a href="http://gruntjs.com/">http://gruntjs.com/</a><br></p>
-
-<p>Grunt utilise Node.js, NPM et Grunt CLI qui permet de gérer Grunt en ligne de commande.</p>
-
-<h5>
-<a name="nodejs-et-npm" class="anchor" href="#nodejs-et-npm"><span class="octicon octicon-link"></span></a>Node.js et NPM</h5>
-
-<p>Pour ceux qui utilisent Homebrew, il vous suffit de rentrer la commande suivante dans votre terminal :</p>
+<p>If Node responds, check the version matches the current version on NodeJS.org.<br>
+If you don’t get a response or have an old version then go to NodeJS.org and click on the big green Install button. NPM will be installed with NodeJS automatically. Else if you have Mac OS, you can use the command prompt :</p>
 
 <pre>$ brew install node</pre>
 
-<h5>
-<a name="grunt-cli" class="anchor" href="#grunt-cli"><span class="octicon octicon-link"></span></a>Grunt CLI</h5>
-
-<pre>$ npm install -g grunt-cli</pre>
-
 <h3>
-<a name="compass" class="anchor" href="#compass"><span class="octicon octicon-link"></span></a>Compass</h3>
+<a id="set-up-your-canopy-project" class="anchor" href="#set-up-your-canopy-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set up your Canopy project</h3>
 
-<p>Compass est un framework CSS basé sur le langage Sass, qui propose un ensemble de mixins pour vos projets.<br>
-Plus d'informations sur la documentation officielle de Compass : <a href="http://compass-style.org/help/">http://compass-style.org/help/</a></p>
+<p>The first step is to go to Github, and download and extract the zip. This will be basis for your project so rename the folder and put it somewhere relevant on your machine. For the rest of this guide we’ll call the folder my-project.</p>
 
-<pre>$ gem install compass</pre>
+<p>Next, you need to install the local dependencies for Canopy. Open a command prompt, change directory into your project folder and run the following npm install scripts.</p>
 
-<h3>
-<a name="bower" class="anchor" href="#bower"><span class="octicon octicon-link"></span></a>Bower</h3>
+<p>Next sections of this guide covers how to use Grunt, Bower, Compass.</p>
 
-<p>Bower est un outil qui permet de gérer les dépendances de votre projet.<br>
-Plus d'informations sur la documentation officielle de Bower : <a href="http://bower.io/">http://bower.io/</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/AlexandraBonnet/canopy">Canopy</a> is maintained by <a href="https://github.com/AlexandraBonnet">AlexandraBonnet</a>.</span>
 
-<p></p><pre>$ npm install -g bower</pre>
-
-<h2>
-<a name="utilisation" class="anchor" href="#utilisation"><span class="octicon octicon-link"></span></a>Utilisation</h2>
-
-<p>Télécharger Canopy puis lancer sur votre terminal</p>
-
-<pre>$ grunt</pre>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Canopy maintained by <a href="https://github.com/AlexandraBonnet">AlexandraBonnet</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
 
+  
   </body>
 </html>
+
