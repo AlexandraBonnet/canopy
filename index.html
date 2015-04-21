@@ -12,7 +12,7 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">Canopy</h1>
-      <h2 class="project-tagline">Start your site with web starter kit</h2>
+      <h2 class="project-tagline">Start your site with a web starter kit</h2>
       <a href="https://github.com/AlexandraBonnet/canopy" class="btn">View on GitHub</a>
       <a href="https://github.com/AlexandraBonnet/canopy/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/AlexandraBonnet/canopy/tarball/master" class="btn">Download .tar.gz</a>
@@ -24,34 +24,70 @@
 <h2>
 <a id="set-up-canopy" class="anchor" href="#set-up-canopy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set up Canopy</h2>
 
-<p>Canopy relies on NodeJS, NPM, Grunt, Bower &amp; Compass, once you’ve got these on your machine, you’ll have everything you need to start using Canopy in your projects.</p>
+<p>Canopy is based to SMACSS and relies on NodeJS, NPM, Grunt, Bower &amp; Compass, once you’ve got these on your machine, you’ll have everything you need to start using Canopy in your projects.</p>
 
 <h3>
 <a id="install-these-one-time-dependencies" class="anchor" href="#install-these-one-time-dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install these one time dependencies</h3>
 
-<p>There are two tool sets you need to install on your machine before you can build sites with Canopy : NodeJS, NPM &amp; Compass.</p>
+<p>There are two tools sets you need to install on your machine before you can build sites with Canopy: NodeJS, NPM &amp; Compass.</p>
 
 <h4>
 <a id="nodejs--npm" class="anchor" href="#nodejs--npm" aria-hidden="true"><span class="octicon octicon-link"></span></a>NodeJS &amp; NPM</h4>
 
-<p>Canopy’s build tools need Node and NPM. Node is used to run Grunt, the task runner. NPM is used to download the modules needed to perform certain tasks in Grunt.<br>
-If you aren’t sure if you have NodeJS and NPM, check by opening a command prompt and running :</p>
+<p>Canopy’s build tools need Node and NPM. Node is used to run Grunt, the task runner. NPM is used to download the modules needed to perform certain tasks in Grunt. Moreover, Node is used too to run Bower, a package manager.</p>
+
+<p>If you aren’t sure if you have NodeJS and NPM, check by opening a command prompt and running:</p>
 
 <pre>$ node -v</pre>
 
 <p>If Node responds, check the version matches the current version on NodeJS.org.<br>
-If you don’t get a response or have an old version then go to NodeJS.org and click on the big green Install button. NPM will be installed with NodeJS automatically. Else if you have Mac OS, you can use the command prompt :</p>
+If you don’t get a response or have an old version then go to NodeJS.org and click on the big green Install button. NPM will be installed with NodeJS automatically.</p>
+
+<p>Else if you have Mac OS, you can use the command prompt:</p>
 
 <pre>$ brew install node</pre>
 
+<h4>
+<a id="compass" class="anchor" href="#compass" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compass</h4>
+
+<p>Compass runs on any computer that has <a href="https://www.ruby-lang.org/en/downloads/">ruby installed</a>.<br>
+If you aren’t sure if you have ruby, check by opening a command prompt and running:</p>
+
+<pre>$ ruby -v</pre>
+
+<p>After that, you can use the command prompt to install Compass:</p>
+
+<pre>$ gem install compass</pre>
+
 <h3>
-<a id="set-up-your-canopy-project" class="anchor" href="#set-up-your-canopy-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set up your Canopy project</h3>
+<a id="set-up-your-web-starter-kit-project" class="anchor" href="#set-up-your-web-starter-kit-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set up your web starter kit project</h3>
 
 <p>The first step is to go to Github, and download and extract the zip. This will be basis for your project so rename the folder and put it somewhere relevant on your machine. For the rest of this guide we’ll call the folder my-project.</p>
 
+<h4>
+<a id="install-the-local-dependencies" class="anchor" href="#install-the-local-dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install the local dependencies</h4>
+
 <p>Next, you need to install the local dependencies for Canopy. Open a command prompt, change directory into your project folder and run the following npm install scripts.</p>
 
-<p>Next sections of this guide covers how to use Grunt, Bower, Compass.</p>
+<pre>$ npm install -g grunt-cli</pre>
+
+<pre>$ npm install -g bower</pre>
+
+<p>and finally:</p>
+
+<pre>$ grunt</pre>
+
+<h3>
+<a id="further-references" class="anchor" href="#further-references" aria-hidden="true"><span class="octicon octicon-link"></span></a>Further references</h3>
+
+<p>Next sections of this guide covers how to use SMACSS, Grunt, Bower, Compass:</p>
+
+<ul>
+<li><a href="https://smacss.com/">https://smacss.com/</a></li>
+<li><a href="http://gruntjs.com/">http://gruntjs.com/</a></li>
+<li><a href="http://bower.io/">http://bower.io/</a></li>
+<li><a href="http://compass-style.org/">http://compass-style.org/</a></li>
+</ul>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/AlexandraBonnet/canopy">Canopy</a> is maintained by <a href="https://github.com/AlexandraBonnet">AlexandraBonnet</a>.</span>
